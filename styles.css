@@ -1,0 +1,35 @@
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #09142f;
+}
+.header1{
+    max-width: 500px;
+    padding:20px 25px 15px;
+    border-radius: 7px;
+    margin-inside: 20px;
+
+    background-color: #323c44;
+}
+header h1{
+    font-size: 27px;
+    font-weight: 1000;
+    color: white;
+}
+header p{
+    margin-top: 5px;
+    font-size:18px ;
+    color: #ffffff;
+}
+.inputs{
+    margin:20px 0 27px;
+}
