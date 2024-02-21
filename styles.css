@@ -41,9 +41,16 @@ header p{
     padding: 0 17px;
     border-radius: 5px;
     border: 1px solid #9999;
+    transition: 0.1s ease;
+}
+.inputs input::placeholder{
+    color: #999999;
 }
 .inputs input:focus{
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+.inputs input:focus::placeholder{
+    color: #bebebe;
 }
 .inputs button{
     width: 100%;
@@ -58,5 +65,47 @@ header p{
     border-radius: 5px;
     pointer-events: none;
     background: #e0eaea;
+    transition: opacity 0.15s ease;
+
+}
+
+.inputs button.active{
+    opacity: 1;
+    pointer-events:auto ;
+
+}
+.info-txt{
+    display: none;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.info-txt span{
+    color: red;
+}
+@media (max-width: 520px) {
+    .header1{
+        padding:  17px 20px 10px;
+    }
+    header  h1{
+        font-size: 25px;
+
+    }
+    header p{
+        font-size: 16px;
+    }
+    .inputs input{
+        height: 54px;
+        font-size: 17px;
+    }
+    .inputs button{
+        height: 50px;
+        font-size: 16px;
+        margin-top: 17px;
+    }
+    .info-txt{
+        font-size: 18px;
+    }
 
 }
